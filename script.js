@@ -8,7 +8,7 @@ const btnRemove = document.getElementById(removeId);
 function shoppingCartCal(btnId, productQuantityId, productValue, productPriceId){
    const btnClick = document.getElementById(btnId);
       btnClick.addEventListener('click', function(){
-         let quantityItem = document.getElementById(productQuantityId).value;
+         let quantityItem = parseInt(document.getElementById(productQuantityId).value);
          if(btnId == 'add-one' || btnId == 'add-extra'){
             quantityItem++;
          }else if(btnId == 'minus1' || btnId == 'minus2'){
